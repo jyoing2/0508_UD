@@ -12,8 +12,8 @@
 {% endif %}
 
 <p>{{blog.body}}</p>
-<a href = "{% url 'main:edit' blog.id %}">수정하기</a>
-<a href = "{% url 'main:delete' blog.id %}">삭제하기</a>
+<a href = "{% url 'main:edit' blog.id %}">수정</a>
+<a href = "{% url 'main:delete' blog.id %}">삭제</a>
 
 {% endblock %}
 
