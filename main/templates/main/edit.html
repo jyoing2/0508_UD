@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container">
     <h1>글 수정하기</h1>
-    <form acitons="{% url 'main:update' blog.id %}"method="post">
+    <form action="{% url 'main:update' blog.id %}"method="post">
         {%csrf_token%}
         <p>제목 : <input type="text" name="title" value="{{blog.title}}"></p>
         <p>작성자 : <input type="text" name="writer" value="{{blog.writer}}"></p>
